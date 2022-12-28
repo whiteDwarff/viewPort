@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .containor {
+            /* width: 960px; */
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: tomato;
+        }
+        .main {
+            float: left;
+            /* width: 640px; */
+            width: 67%;
+            height: 300px;
+            background-color: orange;
+            padding: 10%;
+        }
+        aside {
+            float: right;
+            /* width: 320px; */
+            width: 33%;
+            height: 300px;
+            background-color: purple;
+            padding: 10%;
+        }
+        footer {
+            clear: both;
+            /* float의 효과를 무시히고 요소를 배치*/
+            /* width: 960px; */
+            width: 100%;
+            height: 100px;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="containor">
+        <header>HEADER</header>
+        <div class="main">MAIN</div>
+        <aside>ASIDE</aside>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+</html>
+<!--
+    % 사용!!
+    부모 요소와의 상대적 크기를 지정할 때 사용.
+    너비와 높이, 여백 뿐 아니라 글자 크기에도 사용가능
+
+
+    margin, padding은 부모의 width 기준으로 계산
+    부모의 width가 500px이라면 자식요소의 padding을 10%로 잡을 시 50px로 계산된다.
+
+-->

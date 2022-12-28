@@ -1,0 +1,84 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 3px #000;
+    z-index: 20;
+}
+.wrap {
+    height: 60px;
+    align-items: center;;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 1rem;
+}
+h1 {
+    height: 40px;
+    line-height: 40px;
+}
+h1 button {
+    border: none;
+    background-color: transparent; /* 투명색*/
+    font-size: 1.5rem;
+}
+h1 span {
+    font-size: 1.2rem;
+    margin-left: 6px;
+}
+
+.hederCenter {
+    width: 50%;
+}
+.hederCenter form {
+    display: flex;
+    max-width: 100%;
+}
+.hederCenter form input {
+    width: calc(100% - 60px);
+    padding: 0 6px;
+    border: 1px solid #8f8ff8;
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+}
+.hederCenter form button {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #8f8ff8;
+    border-left: none;
+    border-radius: 0 2px 2px 0;
+}
+.haederTail {
+    display: flex;
+}
+.haederTail button {
+    display: none;
+    margin-right: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+.profile {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    background-color: tomato;
+}
+@media screen and (max-width: 800px) {
+    h1 span{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .hederCenter {
+        display: none;
+    }
+    .profile {
+        display: none;
+    }
+    .haederTail button {
+        display: block;
+    }
+}

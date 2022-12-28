@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width:50%;
+        }
+        img {
+            /* width: 100%; */
+            /* max-width: 640px; */
+            /* 부모의 크기를 가져가지만 640px보다 커지지말아라~~ */
+
+            max-width: 100%;
+            /* div의 크기만큼만 커져라~ */
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <img src="song.png" alt="">
+    </div> -->
+    
+    <picture>
+        <source srcset="song1.png" media="(min-width: 1200px)">
+        <source srcset="Rulefoot.png" media="(min-width: 800px)">
+        <!-- 만약에 800px 보다 커지면 <img> tag의 이미지를 보여줘라-->
+        <img src="mainfoot.png" alt="">
+    </picture>
+</body>
+</html>
+<!--
+    width : 
+        요소의 넓이
+    
+    max-width : 
+        요소의 넓이가 지정값보다 커질 수 없다 ~
+-->

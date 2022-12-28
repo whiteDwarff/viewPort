@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: cyan;
+            transition: 0.5s;
+        }
+
+        @media screen and (min-width: 800px) {
+            /* 800px 이상일 때 ~의 조건 */
+            div {
+                width: 400px;
+                height: 400px;
+                background-color: tomato;
+                transition: 0.5s;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            /* 800px 이상일 때 ~의 조건 */
+            div {
+                width: 800px;
+                height: 800px;
+                background-color: purple;
+                transition: 0.5s;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+<!--
+    media query
+
+    - 미디어 타입
+        @media screen and (max-width: 768px) { 
+            query
+
+            화면 (screen)의 너비가
+            768px 이하일 경우에 여기여 정의된 스타일 선언문을 추가 적용하겠다 ~~
+        }
+
+        screen : 브라우저의 화면
+        print  : 인쇄 결과물
+        speech : 웹 문서를 음성을 통해 열람하는 상황일 때~
+
+    - 조건
+
+-->

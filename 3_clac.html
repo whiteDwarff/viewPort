@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc 함수</title>
+    <style>
+        .message {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            padding: 0.5em;
+            border: 1px solid black;
+            font-size: 1.5em;
+        }
+        .message__text {
+            /* width: 80%; */
+            width: calc(100% - 100px);
+            /* 100%에서 100px을 뺀 값만 가로값으로 쓰겠다 ~ */
+            height: 100%;
+            border: none;
+            resize: none;
+            /* 사용자가 크기 조정 불가하게 만듬 */
+        }
+        .message__text:focus { outline: none;}
+
+        .message__send {
+            width: 100px;
+            height: 100%;
+            border-radius: 0.5em;
+            background-color: #9ec4cf;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <textarea class="message__text"></textarea>
+        <button class="message__send">전송</button>
+    </div>
+</body>
+</html>
+<!--
+    css 함수
+
+    css의 함수는 괄호안에 인수를 전달하면, 인수애 따른 결과값을  적용한다.
+
+    calc() 함수
+        - 표현식을 하나 받고, 표현식의 결과가 최종값이 된다.
+-->

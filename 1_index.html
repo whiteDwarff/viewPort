@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:20px">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em과 rem</title>
+    <style>
+        .outer {
+            font-size: 32px;
+        }
+        .inner {
+            /* 부모 요소의 글꼴은 24px, 2em은 48px이다.*/
+            font-size: 1em;
+            /* font-size: 2rem; */
+
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            
+            padding : 1em;
+            margin: 1em;
+
+
+            /* padding: 1rem;
+            margin: 1rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">고양이</div>
+    </div>
+</body>
+</html>
+
+<!--
+    px : 
+        절대 길이 단위, 가변성이 없다.
+        반응형 웹에 적합하지 않다.
+
+    ----------------------------------------------------
+
+    em : 
+        부모 요소의 글꼴 크기를 의미
+        마진이나 패딩은 자기 자신의 글자 크기를 기준으로 한다.
+    rem : 
+        root em을 의미
+        html의 글꼴 크기 (16px)을 기준으로 함
+        루트 요소의 글꼴 크기를 의미
+
+-->

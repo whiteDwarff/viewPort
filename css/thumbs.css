@@ -1,0 +1,71 @@
+section .wrap {
+    display: flex;
+    flex-wrap : wrap;
+    /* 1차원 정렬을 여러 행으로 할수 있다. */
+    justify-content: space-between;
+    margin: 60px 0 0 200px;
+    padding: 20px 0 0 10px;
+}
+section .wrap .item {
+    width: 25%;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+section img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+section .info {
+    display: flex;
+}
+section .section_profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: tomato;
+}
+section .thum_text {
+    width: calc(100% - 36px);
+    padding-left: 10px;
+}
+section .thum_text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+section .thum_text p:nth-child(2) {
+    font-size: 1rem;
+    margin-bottom: 0.2em;
+    color: #aeaeae;
+}
+section .thum_text p:last-child {
+    font-size: 0.9rem;
+    color: #aeaeae;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    section .wrap .item {
+        width: 33%;
+    }
+}
+@media screen and (max-width: 800px) {
+    section .wrap {
+        margin: 60px 0 0 60px;
+    }
+    section .wrap .item {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    section .wrap {
+        margin: 60px 0 0 0;
+        padding: 20px 0 0 0;
+    }
+    section .wrap .item {
+        width: 100%;
+    }
+    section img {
+        width: inherit;
+    }
+}
